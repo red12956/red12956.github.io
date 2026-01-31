@@ -4,7 +4,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta name="color-scheme" content="light dark" />
-		<title>Light 隐私政策</title>
+		<title>Light 隐私政策 / Privacy Policy</title>
 		<style>
 			:root {
 				--fg: #0b0b0f;
@@ -38,19 +38,19 @@
 			}
 
 			.wrap {
-				max-width: 920px;
+				max-width: 980px;
 				margin: 0 auto;
 				padding: 44px 20px 60px;
 				box-sizing: border-box;
 			}
 
 			header {
-				margin-bottom: 22px;
+				margin-bottom: 18px;
 			}
 
 			h1 {
 				margin: 0;
-				font-size: 30px;
+				font-size: 28px;
 				letter-spacing: -0.01em;
 			}
 
@@ -70,34 +70,61 @@
 			}
 
 			section {
-				margin-top: 22px;
-				padding: 18px 18px;
+				margin-top: 18px;
+				padding: 16px 16px;
 				border: 1px solid var(--border);
 				background: var(--card);
 				border-radius: 12px;
 			}
 
 			h2 {
-				margin: 0 0 10px;
-				font-size: 18px;
+				margin: 0 0 12px;
+				font-size: 16px;
+				display: flex;
+				gap: 10px;
+				align-items: baseline;
+				flex-wrap: wrap;
 			}
 
-			p {
-				margin: 10px 0;
+			h2 .en {
+				color: var(--muted);
+				font-weight: 500;
+				font-size: 14px;
 			}
 
-			ul {
-				margin: 10px 0 0;
+			.cols {
+				display: grid;
+				grid-template-columns: 1fr;
+				gap: 14px;
+			}
+
+			@media (min-width: 860px) {
+				.cols {
+					grid-template-columns: 1fr 1fr;
+					gap: 18px;
+				}
+			}
+
+			.col {
+				min-width: 0;
+			}
+
+			.col p {
+				margin: 8px 0;
+			}
+
+			.col ul {
+				margin: 8px 0 0;
 				padding-left: 20px;
 			}
 
 			.note {
 				color: var(--muted);
-				font-size: 14px;
+				font-size: 13px;
 			}
 
 			footer {
-				margin-top: 22px;
+				margin-top: 18px;
 				color: var(--muted);
 				font-size: 13px;
 			}
@@ -106,104 +133,119 @@
 	<body>
 		<main class="wrap">
 			<header>
-				<h1>Light 隐私政策</h1>
-				<div class="meta">生效日期：2026年1月31日</div>
-				<div class="meta"><a href="light.html">返回 Light</a></div>
+				<h1>Light 隐私政策 / Privacy Policy</h1>
+				<div class="meta">生效日期 / Effective date：2026年1月31日</div>
+				<div class="meta"><a href="light.html">返回 / Back</a></div>
 			</header>
 
 			<section>
-				<h2>概述</h2>
-				<p>
-					Light（“本应用”）是一款 SwiftUI 圣经阅读器，支持跨 Apple 平台，并可通过 Apple 的
-					iCloud / CloudKit 同步阅读进度与相关数据。
-				</p>
-				<p>
-					我们的目标是尽可能少地处理数据：本应用不收集用于识别你身份的资料，也不将你的数据传递给开发者。
-				</p>
+				<h2><span>概述</span><span class="en">Summary</span></h2>
+				<div class="cols">
+					<div class="col" lang="zh-CN">
+						<p>Light（“本应用”）是一款圣经阅读器，支持跨 Apple 平台。</p>
+						<p>我们不向开发者收集或上传你的个人数据。</p>
+						<p class="note">如你启用 iCloud 同步，相关数据将存储在你的 iCloud（CloudKit）中，用于跨设备同步。</p>
+					</div>
+					<div class="col" lang="en">
+						<p>Light (the “App”) is a Bible reader across Apple platforms.</p>
+						<p>We do not collect or upload your personal data to the developer.</p>
+						<p class="note">If you enable iCloud sync, relevant data is stored in your iCloud (CloudKit) for cross-device syncing.</p>
+					</div>
+				</div>
 			</section>
 
 			<section>
-				<h2>我们收集或处理哪些数据</h2>
-				<p>本应用在提供功能时，可能会在你的设备或你的 iCloud 中处理以下类型的数据：</p>
-				<ul>
-					<li>阅读进度（例如已读位置/章节）</li>
-					<li>阅读收藏夹、书签（如你创建）</li>
-					<li>应用设置（如你启用的偏好设置）</li>
-				</ul>
-				<p class="note">
-					以上数据用于实现阅读与跨设备同步。除非你主动将内容分享给他人，否则本应用不会将你的阅读内容发送给开发者。
-				</p>
+				<h2><span>我们处理哪些数据</span><span class="en">Data We Handle</span></h2>
+				<div class="cols">
+					<div class="col" lang="zh-CN">
+						<p>为提供功能，本应用可能在设备本地或你的 iCloud 中处理：</p>
+						<ul>
+							<li>阅读进度（例如已读位置/章节）</li>
+							<li>收藏/书签（如你创建）</li>
+						</ul>
+						<p class="note">我们不收集精确位置、通讯录、照片、麦克风、广告标识符等信息。</p>
+					</div>
+					<div class="col" lang="en">
+						<p>To provide features, the App may handle (locally and/or in your iCloud):</p>
+						<ul>
+							<li>Reading progress (e.g., last read position/chapter)</li>
+							<li>Favorites / bookmarks (if you create them)</li>
+						</ul>
+						<p class="note">We do not collect precise location, contacts, photos, microphone data, or advertising identifiers.</p>
+					</div>
+				</div>
 			</section>
 
 			<section>
-				<h2>数据如何使用</h2>
-				<p>我们仅将数据用于以下目的：</p>
-				<ul>
-					<li>提供核心阅读功能</li>
-					<li>在你的设备之间同步阅读进度与收藏等数据（通过 iCloud / CloudKit）</li>
-					<li>在你更换设备或重装后恢复你的使用状态（在你开启 iCloud 同步的前提下）</li>
-				</ul>
+				<h2><span>iCloud / CloudKit 同步</span><span class="en">iCloud / CloudKit Sync</span></h2>
+				<div class="cols">
+					<div class="col" lang="zh-CN">
+						<p>若你启用 iCloud，本应用会使用 Apple CloudKit 在你的设备间同步阅读进度与收藏/书签。</p>
+						<p class="note">同步数据与 Apple ID 相关联并存储在你的 iCloud 中；我们不运营自己的同步服务器。</p>
+					</div>
+					<div class="col" lang="en">
+						<p>If you enable iCloud, the App uses Apple CloudKit to sync your reading progress and favorites/bookmarks across your devices.</p>
+						<p class="note">Synced data is associated with your Apple ID and stored in your iCloud; we do not run our own sync servers.</p>
+					</div>
+				</div>
 			</section>
 
 			<section>
-				<h2>数据共享与第三方</h2>
-				<p>
-					本应用不向开发者服务器上传你的个人数据，也不会将你的数据出售或出租给第三方。
-				</p>
-				<p>
-					如果你启用了 iCloud 同步，本应用会使用 Apple 提供的 CloudKit 服务将上述数据存储在你的 iCloud 账户中。
-					该数据与 Apple ID 相关联并由 Apple 按其隐私与安全机制进行处理。
-				</p>
-				<p class="note">
-					本应用不集成广告 SDK，也不使用第三方分析 SDK 来跟踪用户。
-				</p>
+				<h2><span>数据共享与跟踪</span><span class="en">Sharing & Tracking</span></h2>
+				<div class="cols">
+					<div class="col" lang="zh-CN">
+						<p>本应用不出售、出租或与第三方共享你的个人数据。</p>
+						<p>本应用不包含广告 SDK，也不使用第三方分析/跟踪 SDK。</p>
+					</div>
+					<div class="col" lang="en">
+						<p>The App does not sell, rent, or share your personal data with third parties.</p>
+						<p>The App does not include ad SDKs and does not use third-party analytics/tracking SDKs.</p>
+					</div>
+				</div>
 			</section>
 
 			<section>
-				<h2>数据存储、保留与删除</h2>
-				<ul>
-					<li>本地数据：存储在你的设备上，用于离线阅读与状态保存。</li>
-					<li>iCloud/CloudKit 数据（若开启同步）：存储在你的 iCloud 中，用于跨设备同步与恢复。</li>
-				</ul>
-				<p>
-					你可以通过以下方式控制或删除数据：
-				</p>
-				<ul>
-					<li>在系统设置中关闭本应用的 iCloud 权限/同步。</li>
-					<li>在 iOS/iPadOS/macOS 的 iCloud 管理中删除本应用存储在 iCloud 的数据（如适用）。</li>
-					<li>卸载本应用以移除设备本地数据（可能不会自动移除 iCloud 中的数据）。</li>
-				</ul>
+				<h2><span>数据控制与删除</span><span class="en">Control & Deletion</span></h2>
+				<div class="cols">
+					<div class="col" lang="zh-CN">
+						<ul>
+							<li>卸载本应用可删除设备本地数据。</li>
+							<li>如需停止同步，可在系统设置中关闭本应用的 iCloud 权限。</li>
+							<li>如需删除 iCloud 中的数据，可在 iCloud 存储管理中删除本应用数据（如适用）。</li>
+						</ul>
+					</div>
+					<div class="col" lang="en">
+						<ul>
+							<li>Uninstalling the App removes local data from your device.</li>
+							<li>To stop syncing, disable iCloud access for the App in system settings.</li>
+							<li>To delete iCloud data, remove the App’s data from your iCloud storage management (if applicable).</li>
+						</ul>
+					</div>
+				</div>
 			</section>
 
 			<section>
-				<h2>安全</h2>
-				<p>
-					我们采取合理措施减少数据处理，并尽可能使用 Apple 提供的系统能力（如 iCloud/CloudKit）进行同步与存储。
-					任何网络传输与账户安全由你的设备系统与 Apple 服务机制共同保障。
-				</p>
+				<h2><span>联系我们</span><span class="en">Contact</span></h2>
+				<div class="cols">
+					<div class="col" lang="zh-CN">
+						<p>如有疑问，请联系：<a href="mailto:red12956@icloud.com">red12956@icloud.com</a></p>
+					</div>
+					<div class="col" lang="en">
+						<p>Questions? Contact: <a href="mailto:red12956@icloud.com">red12956@icloud.com</a></p>
+					</div>
+				</div>
 			</section>
 
 			<section>
-				<h2>儿童隐私</h2>
-				<p>
-					本应用不以收集儿童个人信息为目的，也不会要求提供姓名、电话号码、精确位置等信息。
-					若你认为我们意外处理了不应处理的数据，请联系我们以便协助处理。
-				</p>
-			</section>
-
-			<section>
-				<h2>本政策的变更</h2>
-				<p>
-					我们可能会更新本隐私政策以反映功能或合规要求的变化。更新后将通过本页面发布并更新生效日期。
-				</p>
-			</section>
-
-			<section>
-				<h2>联系我们</h2>
-				<p>
-					如对本隐私政策或数据处理有任何疑问，请联系：
-					<a href="mailto:red12956@icloud.com">red12956@icloud.com</a>
-				</p>
+				<h2><span>政策更新</span><span class="en">Changes</span></h2>
+				<div class="cols">
+					<div class="col" lang="zh-CN">
+						<p>如本政策更新，我们将在此页面发布并更新生效日期。</p>
+					</div>
+					<div class="col" lang="en">
+						<p>If we update this policy, we will publish it on this page and update the effective date.</p>
+					</div>
+				</div>
 			</section>
 
 			<footer>
