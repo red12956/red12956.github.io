@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="color-scheme" content="light dark" />
+		<title>Light 隐私政策</title>
+		<style>
+			:root {
+				--fg: #0b0b0f;
+				--muted: rgba(11, 11, 15, 0.68);
+				--bg: #ffffff;
+				--card: rgba(11, 11, 15, 0.04);
+				--border: rgba(11, 11, 15, 0.10);
+				--link: #0a66c2;
+			}
+
+			@media (prefers-color-scheme: dark) {
+				:root {
+					--fg: #f5f6f8;
+					--muted: rgba(245, 246, 248, 0.68);
+					--bg: #0b0b0f;
+					--card: rgba(245, 246, 248, 0.06);
+					--border: rgba(245, 246, 248, 0.14);
+					--link: #5aa7ff;
+				}
+			}
+
+			html,
+			body {
+				margin: 0;
+				padding: 0;
+				background: var(--bg);
+				color: var(--fg);
+				font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue",
+					Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+				line-height: 1.6;
+			}
+
+			.wrap {
+				max-width: 920px;
+				margin: 0 auto;
+				padding: 44px 20px 60px;
+				box-sizing: border-box;
+			}
+
+			header {
+				margin-bottom: 22px;
+			}
+
+			h1 {
+				margin: 0;
+				font-size: 30px;
+				letter-spacing: -0.01em;
+			}
+
+			.meta {
+				margin-top: 8px;
+				color: var(--muted);
+				font-size: 14px;
+			}
+
+			a {
+				color: var(--link);
+				text-decoration: none;
+			}
+
+			a:hover {
+				text-decoration: underline;
+			}
+
+			section {
+				margin-top: 22px;
+				padding: 18px 18px;
+				border: 1px solid var(--border);
+				background: var(--card);
+				border-radius: 12px;
+			}
+
+			h2 {
+				margin: 0 0 10px;
+				font-size: 18px;
+			}
+
+			p {
+				margin: 10px 0;
+			}
+
+			ul {
+				margin: 10px 0 0;
+				padding-left: 20px;
+			}
+
+			.note {
+				color: var(--muted);
+				font-size: 14px;
+			}
+
+			footer {
+				margin-top: 22px;
+				color: var(--muted);
+				font-size: 13px;
+			}
+		</style>
+	</head>
+	<body>
+		<main class="wrap">
+			<header>
+				<h1>Light 隐私政策</h1>
+				<div class="meta">生效日期：2026年1月31日</div>
+				<div class="meta"><a href="light.html">返回 Light</a></div>
+			</header>
+
+			<section>
+				<h2>概述</h2>
+				<p>
+					Light（“本应用”）是一款 SwiftUI 圣经阅读器，支持跨 Apple 平台，并可通过 Apple 的
+					iCloud / CloudKit 同步阅读进度与相关数据。
+				</p>
+				<p>
+					我们的目标是尽可能少地处理数据：本应用不收集用于识别你身份的资料，也不将你的数据传递给开发者。
+				</p>
+			</section>
+
+			<section>
+				<h2>我们收集或处理哪些数据</h2>
+				<p>本应用在提供功能时，可能会在你的设备或你的 iCloud 中处理以下类型的数据：</p>
+				<ul>
+					<li>阅读进度（例如已读位置/章节）</li>
+					<li>阅读收藏夹、书签（如你创建）</li>
+					<li>应用设置（如你启用的偏好设置）</li>
+				</ul>
+				<p class="note">
+					以上数据用于实现阅读与跨设备同步。除非你主动将内容分享给他人，否则本应用不会将你的阅读内容发送给开发者。
+				</p>
+			</section>
+
+			<section>
+				<h2>数据如何使用</h2>
+				<p>我们仅将数据用于以下目的：</p>
+				<ul>
+					<li>提供核心阅读功能</li>
+					<li>在你的设备之间同步阅读进度与收藏等数据（通过 iCloud / CloudKit）</li>
+					<li>在你更换设备或重装后恢复你的使用状态（在你开启 iCloud 同步的前提下）</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>数据共享与第三方</h2>
+				<p>
+					本应用不向开发者服务器上传你的个人数据，也不会将你的数据出售或出租给第三方。
+				</p>
+				<p>
+					如果你启用了 iCloud 同步，本应用会使用 Apple 提供的 CloudKit 服务将上述数据存储在你的 iCloud 账户中。
+					该数据与 Apple ID 相关联并由 Apple 按其隐私与安全机制进行处理。
+				</p>
+				<p class="note">
+					本应用不集成广告 SDK，也不使用第三方分析 SDK 来跟踪用户。
+				</p>
+			</section>
+
+			<section>
+				<h2>数据存储、保留与删除</h2>
+				<ul>
+					<li>本地数据：存储在你的设备上，用于离线阅读与状态保存。</li>
+					<li>iCloud/CloudKit 数据（若开启同步）：存储在你的 iCloud 中，用于跨设备同步与恢复。</li>
+				</ul>
+				<p>
+					你可以通过以下方式控制或删除数据：
+				</p>
+				<ul>
+					<li>在系统设置中关闭本应用的 iCloud 权限/同步。</li>
+					<li>在 iOS/iPadOS/macOS 的 iCloud 管理中删除本应用存储在 iCloud 的数据（如适用）。</li>
+					<li>卸载本应用以移除设备本地数据（可能不会自动移除 iCloud 中的数据）。</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>安全</h2>
+				<p>
+					我们采取合理措施减少数据处理，并尽可能使用 Apple 提供的系统能力（如 iCloud/CloudKit）进行同步与存储。
+					任何网络传输与账户安全由你的设备系统与 Apple 服务机制共同保障。
+				</p>
+			</section>
+
+			<section>
+				<h2>儿童隐私</h2>
+				<p>
+					本应用不以收集儿童个人信息为目的，也不会要求提供姓名、电话号码、精确位置等信息。
+					若你认为我们意外处理了不应处理的数据，请联系我们以便协助处理。
+				</p>
+			</section>
+
+			<section>
+				<h2>本政策的变更</h2>
+				<p>
+					我们可能会更新本隐私政策以反映功能或合规要求的变化。更新后将通过本页面发布并更新生效日期。
+				</p>
+			</section>
+
+			<section>
+				<h2>联系我们</h2>
+				<p>
+					如对本隐私政策或数据处理有任何疑问，请联系：
+					<a href="mailto:red12956@icloud.com">red12956@icloud.com</a>
+				</p>
+			</section>
+
+			<footer>
+				<div>© Light</div>
+			</footer>
+		</main>
+	</body>
+</html>
