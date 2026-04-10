@@ -1,256 +1,135 @@
 <!doctype html>
 <html lang="zh-CN">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<meta name="color-scheme" content="light dark" />
-		<title>Light 隐私政策 / Privacy Policy</title>
-		<style>
-			:root {
-				--fg: #0b0b0f;
-				--muted: rgba(11, 11, 15, 0.68);
-				--bg: #ffffff;
-				--card: rgba(11, 11, 15, 0.04);
-				--border: rgba(11, 11, 15, 0.10);
-				--link: #0a66c2;
-			}
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
+    <title>Light 隐私政策</title>
+    <style>
+      :root {
+        --fg: #0b0b0f;
+        --muted: rgba(11, 11, 15, 0.68);
+        --bg: #ffffff;
+        --card: rgba(11, 11, 15, 0.04);
+        --border: rgba(11, 11, 15, 0.10);
+        --link: #0a66c2;
+      }
 
-			@media (prefers-color-scheme: dark) {
-				:root {
-					--fg: #f5f6f8;
-					--muted: rgba(245, 246, 248, 0.68);
-					--bg: #0b0b0f;
-					--card: rgba(245, 246, 248, 0.06);
-					--border: rgba(245, 246, 248, 0.14);
-					--link: #5aa7ff;
-				}
-			}
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --fg: #f5f6f8;
+          --muted: rgba(245, 246, 248, 0.68);
+          --bg: #0b0b0f;
+          --card: rgba(245, 246, 248, 0.06);
+          --border: rgba(245, 246, 248, 0.14);
+          --link: #5aa7ff;
+        }
+      }
 
-			html,
-			body {
-				margin: 0;
-				padding: 0;
-				background: var(--bg);
-				color: var(--fg);
-				font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue",
-					Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
-				line-height: 1.6;
-			}
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        background: var(--bg);
+        color: var(--fg);
+        font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue",
+          Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+        line-height: 1.6;
+      }
 
-			.wrap {
-				max-width: 980px;
-				margin: 0 auto;
-				padding: 44px 20px 60px;
-				box-sizing: border-box;
-			}
+      .wrap {
+        max-width: 820px;
+        margin: 0 auto;
+        padding: 36px 18px 56px;
+        box-sizing: border-box;
+      }
 
-			header {
-				margin-bottom: 18px;
-			}
+      header {
+        margin-bottom: 14px;
+      }
 
-			h1 {
-				margin: 0;
-				font-size: 28px;
-				letter-spacing: -0.01em;
-			}
+      h1 {
+        margin: 0;
+        font-size: 24px;
+        letter-spacing: -0.01em;
+      }
 
-			.meta {
-				margin-top: 8px;
-				color: var(--muted);
-				font-size: 14px;
-			}
+      .meta {
+        margin-top: 8px;
+        color: var(--muted);
+        font-size: 13px;
+      }
 
-			a {
-				color: var(--link);
-				text-decoration: none;
-			}
+      a { color: var(--link); text-decoration: none; }
+      a:hover { text-decoration: underline; }
 
-			a:hover {
-				text-decoration: underline;
-			}
+      section {
+        margin-top: 14px;
+        padding: 14px;
+        border: 1px solid var(--border);
+        background: var(--card);
+        border-radius: 10px;
+      }
 
-			section {
-				margin-top: 18px;
-				padding: 16px 16px;
-				border: 1px solid var(--border);
-				background: var(--card);
-				border-radius: 12px;
-			}
+      h2 { margin: 0 0 8px; font-size: 16px; }
+      p { margin: 8px 0; }
+      ul { margin: 8px 0 0; padding-left: 20px; }
+      .note { color: var(--muted); font-size: 13px; }
+      footer { margin-top: 14px; color: var(--muted); font-size: 13px; }
+    </style>
+  </head>
+  <body>
+    <main class="wrap">
+      <header>
+        <h1>Light 隐私政策</h1>
+        <div class="meta">生效日期：2026年1月31日</div>
+        <div class="meta"><a href="light.html">返回</a></div>
+      </header>
 
-			h2 {
-				margin: 0 0 12px;
-				font-size: 16px;
-				display: flex;
-				gap: 10px;
-				align-items: baseline;
-				flex-wrap: wrap;
-			}
+      <section>
+        <h2>概述</h2>
+        <p>Light 是一款圣经阅读器，支持跨 Apple 平台。我们尽量减少对用户数据的处理，不向开发者收集或上传个人数据。</p>
+        <p class="note">如你启用 iCloud，同步数据会存储在你的 iCloud（CloudKit）中，用于在你自己的设备间同步。</p>
+      </section>
 
-			h2 .en {
-				color: var(--muted);
-				font-weight: 500;
-				font-size: 14px;
-			}
+      <section>
+        <h2>我们处理的数据</h2>
+        <p>为提供核心功能，本应用可能在设备本地或你的 iCloud 中处理：</p>
+        <ul>
+          <li>阅读进度（例如已读位置/章节）</li>
+          <li>收藏与书签（如你创建）</li>
+        </ul>
+        <p class="note">我们不处理通讯录、照片或精确位置信息等隐私敏感数据，除非你显式授权。</p>
+      </section>
 
-			.cols {
-				display: grid;
-				grid-template-columns: 1fr;
-				gap: 14px;
-			}
+      <section>
+        <h2>麦克风权限</h2>
+        <p>如果你使用需要语音交互的功能，本应用可能会请求麦克风权限以启用相关功能。只有在你明确授权后才会访问麦克风。</p>
+        <p class="note">音频数据仅用于功能实现（例如本地或实时识别），不会上传到开发者服务器或用于其他未经声明的目的。</p>
+      </section>
 
-			@media (min-width: 860px) {
-				.cols {
-					grid-template-columns: 1fr 1fr;
-					gap: 18px;
-				}
-			}
+      <section>
+        <h2>同步与第三方</h2>
+        <p>本应用不将你的个人数据出售或出租给第三方，也不运行自己的同步服务器。已启用的 iCloud 同步使用 Apple 的 CloudKit，数据由 Apple 处理与保护。</p>
+      </section>
 
-			.col {
-				min-width: 0;
-			}
+      <section>
+        <h2>数据删除与控制</h2>
+        <ul>
+          <li>卸载应用将删除设备本地数据。</li>
+          <li>要停止同步，可在系统设置中关闭本应用的 iCloud 权限。</li>
+          <li>如需删除 iCloud 中的数据，请在 iCloud 存储管理中删除本应用数据（如适用）。</li>
+        </ul>
+      </section>
 
-			.col p {
-				margin: 8px 0;
-			}
+      <section>
+        <h2>联系我们</h2>
+        <p>如有隐私或数据处理方面的问题，请联系：<a href="mailto:red12956@icloud.com">red12956@icloud.com</a></p>
+      </section>
 
-			.col ul {
-				margin: 8px 0 0;
-				padding-left: 20px;
-			}
-
-			.note {
-				color: var(--muted);
-				font-size: 13px;
-			}
-
-			footer {
-				margin-top: 18px;
-				color: var(--muted);
-				font-size: 13px;
-			}
-		</style>
-	</head>
-	<body>
-		<main class="wrap">
-			<header>
-				<h1>Light 隐私政策 / Privacy Policy</h1>
-				<div class="meta">生效日期 / Effective date：2026年1月31日</div>
-				<div class="meta"><a href="light.html">返回 / Back</a></div>
-			</header>
-
-			<section>
-				<h2><span>概述</span><span class="en">Summary</span></h2>
-				<div class="cols">
-					<div class="col" lang="zh-CN">
-						<p>Light（“本应用”）是一款圣经阅读器，支持跨 Apple 平台。</p>
-						<p>我们不向开发者收集或上传你的个人数据。</p>
-						<p class="note">如你启用 iCloud 同步，相关数据将存储在你的 iCloud（CloudKit）中，用于跨设备同步。</p>
-					</div>
-					<div class="col" lang="en">
-						<p>Light (the “App”) is a Bible reader across Apple platforms.</p>
-						<p>We do not collect or upload your personal data to the developer.</p>
-						<p class="note">If you enable iCloud sync, relevant data is stored in your iCloud (CloudKit) for cross-device syncing.</p>
-					</div>
-				</div>
-			</section>
-
-			<section>
-				<h2><span>我们处理哪些数据</span><span class="en">Data We Handle</span></h2>
-				<div class="cols">
-					<div class="col" lang="zh-CN">
-						<p>为提供功能，本应用可能在设备本地或你的 iCloud 中处理：</p>
-						<ul>
-							<li>阅读进度（例如已读位置/章节）</li>
-							<li>收藏/书签（如你创建）</li>
-						</ul>
-						<p class="note">我们不收集精确位置、通讯录、照片、麦克风、广告标识符等信息。</p>
-					</div>
-					<div class="col" lang="en">
-						<p>To provide features, the App may handle (locally and/or in your iCloud):</p>
-						<ul>
-							<li>Reading progress (e.g., last read position/chapter)</li>
-							<li>Favorites / bookmarks (if you create them)</li>
-						</ul>
-						<p class="note">We do not collect precise location, contacts, photos, microphone data, or advertising identifiers.</p>
-					</div>
-				</div>
-			</section>
-
-			<section>
-				<h2><span>iCloud / CloudKit 同步</span><span class="en">iCloud / CloudKit Sync</span></h2>
-				<div class="cols">
-					<div class="col" lang="zh-CN">
-						<p>若你启用 iCloud，本应用会使用 Apple CloudKit 在你的设备间同步阅读进度与收藏/书签。</p>
-						<p class="note">同步数据与 Apple ID 相关联并存储在你的 iCloud 中；我们不运营自己的同步服务器。</p>
-					</div>
-					<div class="col" lang="en">
-						<p>If you enable iCloud, the App uses Apple CloudKit to sync your reading progress and favorites/bookmarks across your devices.</p>
-						<p class="note">Synced data is associated with your Apple ID and stored in your iCloud; we do not run our own sync servers.</p>
-					</div>
-				</div>
-			</section>
-
-			<section>
-				<h2><span>数据共享与跟踪</span><span class="en">Sharing & Tracking</span></h2>
-				<div class="cols">
-					<div class="col" lang="zh-CN">
-						<p>本应用不出售、出租或与第三方共享你的个人数据。</p>
-						<p>本应用不包含广告 SDK，也不使用第三方分析/跟踪 SDK。</p>
-					</div>
-					<div class="col" lang="en">
-						<p>The App does not sell, rent, or share your personal data with third parties.</p>
-						<p>The App does not include ad SDKs and does not use third-party analytics/tracking SDKs.</p>
-					</div>
-				</div>
-			</section>
-
-			<section>
-				<h2><span>数据控制与删除</span><span class="en">Control & Deletion</span></h2>
-				<div class="cols">
-					<div class="col" lang="zh-CN">
-						<ul>
-							<li>卸载本应用可删除设备本地数据。</li>
-							<li>如需停止同步，可在系统设置中关闭本应用的 iCloud 权限。</li>
-							<li>如需删除 iCloud 中的数据，可在 iCloud 存储管理中删除本应用数据（如适用）。</li>
-						</ul>
-					</div>
-					<div class="col" lang="en">
-						<ul>
-							<li>Uninstalling the App removes local data from your device.</li>
-							<li>To stop syncing, disable iCloud access for the App in system settings.</li>
-							<li>To delete iCloud data, remove the App’s data from your iCloud storage management (if applicable).</li>
-						</ul>
-					</div>
-				</div>
-			</section>
-
-			<section>
-				<h2><span>联系我们</span><span class="en">Contact</span></h2>
-				<div class="cols">
-					<div class="col" lang="zh-CN">
-						<p>如有疑问，请联系：<a href="mailto:red12956@icloud.com">red12956@icloud.com</a></p>
-					</div>
-					<div class="col" lang="en">
-						<p>Questions? Contact: <a href="mailto:red12956@icloud.com">red12956@icloud.com</a></p>
-					</div>
-				</div>
-			</section>
-
-			<section>
-				<h2><span>政策更新</span><span class="en">Changes</span></h2>
-				<div class="cols">
-					<div class="col" lang="zh-CN">
-						<p>如本政策更新，我们将在此页面发布并更新生效日期。</p>
-					</div>
-					<div class="col" lang="en">
-						<p>If we update this policy, we will publish it on this page and update the effective date.</p>
-					</div>
-				</div>
-			</section>
-
-			<footer>
-				<div>© Light</div>
-			</footer>
-		</main>
-	</body>
+      <footer>
+        <div>© Light</div>
+      </footer>
+    </main>
+  </body>
 </html>
