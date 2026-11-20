@@ -8,7 +8,7 @@
 :root {
   color-scheme: light dark;
   font-family: system-ui, sans-serif;
-  background: #f9f9f8;
+  background: #f5f5f5;
   color: #242424;
 }
 
@@ -46,77 +46,45 @@ h1 {
 
 .card {
   display: grid;
-  grid-template: 1fr auto / minmax(0, 1fr) auto;
-  align-items: end;
-  gap: 24px 8px;
-  min-height: clamp(164px, 24vw, 232px);
+  place-content: center;
+  justify-items: center;
+  gap: 16px;
+  min-height: clamp(148px, 22vw, 208px);
   padding: clamp(20px, 3vw, 32px);
-  border: 1px solid transparent;
   color: var(--card-text);
+  text-align: center;
   text-decoration: none;
 }
 
 .card-icon {
-  grid-column: 1 / -1;
-  align-self: start;
   display: block;
   width: clamp(52px, 7vw, 64px);
   height: auto;
 }
 
 .card-name {
-  align-self: center;
   font-size: clamp(1.5rem, 3.6vw, 2rem);
   font-weight: 500;
   line-height: 1.15;
   overflow-wrap: anywhere;
 }
 
-.card-arrow {
-  display: grid;
-  place-items: center;
-  width: 42px;
-  height: 42px;
-  border-radius: 8px;
-  background: var(--arrow-bg);
-  color: var(--arrow-text);
-  font: 24px / 1 Arial, sans-serif;
-}
-
-.card:focus-visible {
-  outline: 2px solid var(--focus-ring);
-  outline-offset: 4px;
-}
-
 .card--reader {
   --card-text: #242424;
-  --arrow-bg: #0f6a4a;
-  --arrow-text: #f4f7f5;
-  --focus-ring: #0f6a4a;
-  border-color: rgba(113, 144, 126, 0.28);
   border-radius: 10px;
-  background: radial-gradient(ellipse at top right, #e1efe6, transparent 75%), #fcfdfc;
-  box-shadow: 0 4px 14px rgb(0 0 0 / 6%);
+  background: #ffffff;
 }
 
 .card--reader .card-name {
   font-family: "Common Reader Brand", "Times New Roman", serif;
   font-weight: 550;
+  font-synthesis: none;
 }
 
 .card--recho {
   --card-text: #1b1c20;
-  --arrow-bg: #dce7f8;
-  --arrow-text: #162b49;
-  --focus-ring: #2d568d;
   border-radius: 16px;
   background: #f1f3f8;
-}
-
-@media (hover: hover) {
-  .card:hover {
-    border-color: var(--focus-ring);
-  }
 }
 
 @media (max-width: 680px) {
@@ -136,29 +104,17 @@ h1 {
 
 @media (prefers-color-scheme: dark) {
   :root {
-    background: #131415;
+    background: #141414;
     color: #f0f0ef;
   }
 
   .card--reader {
-    --card-text: #f0f0ef;
-    --focus-ring: #8fd5b0;
-    border-color: rgba(146, 179, 160, 0.32);
-    background: radial-gradient(ellipse at top right, #20392e, transparent 75%), #181e1b;
-    box-shadow: 0 4px 14px rgb(0 0 0 / 22%);
+    --card-text: #f3f3f3;
+    background: #1d1d1d;
   }
 
   .card--recho {
     --card-text: #edf0f7;
-    --arrow-bg: #304767;
-    --arrow-text: #dce7f8;
-    --focus-ring: #a6c7fa;
     background: #1b222c;
-  }
-}
-
-@media (forced-colors: active) {
-  .card, .card-arrow {
-    border: 1px solid LinkText;
   }
 }
