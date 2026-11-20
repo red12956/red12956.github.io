@@ -248,6 +248,16 @@ h1 {
   }
 }
 
+@media (max-width: 360px) {
+  .card--reader {
+    --heading-gap: 12px;
+  }
+
+  .card--reader .card-name {
+    font-size: 1.25rem;
+  }
+}
+
 @media (hover: hover) {
   .card:hover::after {
     opacity: 1;
