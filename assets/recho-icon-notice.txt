@@ -1,0 +1,7 @@
+The rEcho website mark adapts Google's Material Symbols Rounded "draw"
+symbol by applying the rEcho website's light and dark colors.
+
+Upstream: https://github.com/google/material-design-icons
+Commit: 10ecc14790612ca8fd164e3f4ffe9c16fc50d5b7
+Path: symbols/web/draw/materialsymbolsrounded/draw_24px.svg
+License: Apache License 2.0, included in recho-icon-license.txt.
